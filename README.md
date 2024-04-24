@@ -74,7 +74,7 @@ dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:overview_formatter, git: "https://gitlab.lblw.ca/dennis.bellinger/overview_formatter.git", tag: "0.1.0"}
+    {:overview_formatter, git: "ssh://git@gitlab.lblw.ca:2222/dennis.bellinger/overview_formatter.git", tag: "0.1.0"}
   ]
 end
 ```
