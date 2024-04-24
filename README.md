@@ -5,6 +5,7 @@ Provides an overview of passing and failing tests. It prints a list of modules w
 ## Example Output
 
 ```
+$ mix test.overview
 ........................................FFF.F.................................................
 ..ss....s.............................sFFFFFFFF...............................................
 ..............................................................................................
@@ -79,7 +80,12 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/overview_formatter>.
+If you'd like to be able to run `mix test.overview` you'll need to add the following snippet to your project definition:
+```elixir
+def project do
+  [
+    preferred_cli_env: ["test.overview": :test]
+  ]
+end
+```
 
